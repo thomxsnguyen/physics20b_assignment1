@@ -9,3 +9,16 @@
   align-items: center;
   gap: 20px;
 }
+
+.contents {
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2px;
+}
+.topics {
+  display: flex;
+  flex-direction: column;
+}
