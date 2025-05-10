@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+const Header = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="header">
+      <div className="left-container">
+        <h1>Assignment 1</h1>
+        <h3>Thomas Nguyen</h3>
+      </div>
+      <h3>PHYSICS 20B</h3>
     </div>
   );
-}
+};
+
+const Question = () => {
+  return (
+    <h1>
+      Should U.S. taxpayers fund expensive space telescopes like JWST while
+      there are urgent issues on Earth?
+    </h1>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="App">
+      <Header />
+      <Question />
+    </div>
+  );
+};
 
 export default App;
