@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,8 +14,14 @@ export const goToRoute = (navigate, path) => {
 };
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <div className="header">
+    <div className={`header ${isVisible ? "visible" : ""}`}>
       <div className="left-container">
         <h1>Assignment 1</h1>
         <h3>Thomas Nguyen</h3>
@@ -34,8 +41,13 @@ const Intro = () => {
 };
 
 const Question = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="question-container">
+    <div className={`question-container ${isVisible ? "visible" : ""}`}>
       <NavLink to="/toc" className="question">
         {" "}
         Should U.S. taxpayers fund expensive space telescopes like JWST while
@@ -59,9 +71,15 @@ const AppContent = () => {
 };
 
 const Contents = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const navigate = useNavigate();
   return (
-    <div className="toc-wrapper">
+    <div className={`toc-wrapper ${isVisible ? "visible" : ""}`}>
       <div className="contents">
         <p>
           <strong>Table of Contents</strong>
@@ -90,8 +108,13 @@ const Contents = () => {
 
 const Topic1 = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="topic-container">
+    <div className={`topic-container ${isVisible ? "visible" : ""}`}>
       <div class="topic-info">
         <h1>Scientific and Technological Impact</h1>
         <p>
@@ -127,8 +150,13 @@ const Topic1 = () => {
 
 const Topic2 = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="topic-container">
+    <div className={`topic-container ${isVisible ? "visible" : ""}`}>
       <div className="topic-info">
         <h1>Historical Precedent and Long-Term Vision</h1>
         <p>
@@ -167,8 +195,13 @@ const Topic2 = () => {
 
 const Topic3 = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="topic-container">
+    <div className={`topic-container ${isVisible ? "visible" : ""}`}>
       <div className="topic-info">
         <h1>Ethics, Cost, and Public Responsibility</h1>
         <p>
@@ -205,8 +238,13 @@ const Topic3 = () => {
 
 const Conclusion = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="topic-container">
+    <div className={`topic-container ${isVisible ? "visible" : ""}`}>
       <div className="topic-info">
         <h1>Conclusion</h1>
         <p>
