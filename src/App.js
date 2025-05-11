@@ -61,16 +61,28 @@ const AppContent = () => {
 const Contents = () => {
   const navigate = useNavigate();
   return (
-    <div className="contents">
-      Table of Contents
-      <div className="topics">
-        <NavLink to="/topic1">Scientific and Technological Impact</NavLink>
-        <NavLink to="/topic2">
-          Historical Precedent and Long-Term Vision
-        </NavLink>
-        <NavLink to="/topic3">Ethics, Cost, and Public Responsibility</NavLink>
-        <NavLink to="/conclusion">Conclusion</NavLink>
-        <button onClick={() => goToRoute(navigate, "/")}>Back to title</button>
+    <div className="toc-wrapper">
+      <div className="contents">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <div className="topics">
+          <NavLink to="/topic1" className="topic">
+            <strong>I.</strong> Scientific and Technological Impact
+          </NavLink>
+          <NavLink to="/topic2" className="topic">
+            <strong>II.</strong> Historical Precedent and Long-Term Vision
+          </NavLink>
+          <NavLink to="/topic3" className="topic">
+            <strong>III.</strong> Ethics, Cost, and Public Responsibility
+          </NavLink>
+          <NavLink to="/conclusion" className="topic">
+            <strong>IV.</strong> Conclusion
+          </NavLink>
+          <button onClick={() => goToRoute(navigate, "/")} className="back">
+            Back to title
+          </button>
+        </div>
       </div>
     </div>
   );

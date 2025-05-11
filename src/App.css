@@ -16,14 +16,6 @@ body {
   gap: 20px;
 }
 
-.contents {
-  display: flex;
-  border: 2px solid black;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2px;
-}
 .topics {
   display: flex;
   flex-direction: column;
@@ -57,4 +49,54 @@ body {
 .question:hover {
   text-shadow: 0 0 40px #b2e9ff;
   color: rgb(255, 255, 255);
+}
+
+.toc-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.contents {
+  display: flex;
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  font-size: 40px;
+}
+
+.topics {
+  margin-top: 10px;
+  gap: 40px;
+}
+
+.topic {
+  display: flex;
+  color: rgb(255, 255, 255);
+  gap: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease-in-out;
+  transition: color 0.3 ease-in-out;
+}
+
+.topic:hover {
+  text-shadow: 0 0 20px #b2e9ff;
+  color: rgb(255, 255, 255);
+}
+
+.back {
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
