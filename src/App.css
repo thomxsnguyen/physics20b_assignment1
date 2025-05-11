@@ -132,6 +132,7 @@ body {
 .back-button:hover {
   text-shadow: 0 0 20px #b2e9ff;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .topic-container {

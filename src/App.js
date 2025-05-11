@@ -177,10 +177,7 @@ const Topic2 = () => {
           can be done with physics and technology and in our understanding of
           the universe. As with the return on Brahe's investments, which was
           realized over a period of decades, the payoff from JWST may be enjoyed
-          most by future generations. The moral of the tale: visionary
-          sponsorship of science—even at great cost—has a tendency to propel
-          revolutionary shifts in human knowledge that can affect countless
-          aspects of society, from education to innovation.
+          most by future generations.
         </p>
         <button
           onClick={() => goToRoute(navigate, "/toc")}
@@ -248,15 +245,16 @@ const Conclusion = () => {
       <div className="topic-info">
         <h1>Conclusion</h1>
         <p>
-          With such perspectives, it is not hard to find that missions like the
-          James Webb Space Telescope are greater than mere scientific discovery
-          they are worth—innovation is catalyzed, global cooperation is enabled,
-          and knowledge treasures investing legacies are left behind. Even
-          though issues like global warming and poverty must take the starring
-          roles, the relatively low cost of JWST does not detract from the
-          pursuit. It is worthwhile in another way rather. I think that space
-          science funding is a wise and good investment that improves society
-          today and tomorrow.
+          Missions such as the James Webb Space Telescope (JWST) do not just aid
+          scientific advancement, they aid innovation, and enable new discovery
+          of space. No matter how much the world is battling with issues such as
+          poverty and climate change, the cost of JWST doesn't hinder attempts
+          to battle these issues. Instead, technological innovation and
+          worldwide cooperation realized through such missions can be leveraged
+          to aid problem-solving on our planet, demonstrating that space travel
+          beyond our world can be useful to us at home.I believe that funding
+          for space science is a solid and smart investment that enhances
+          society today and tomorrow.
         </p>
         <button
           onClick={() => goToRoute(navigate, "/toc")}
