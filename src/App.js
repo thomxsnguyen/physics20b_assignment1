@@ -35,11 +35,13 @@ const Intro = () => {
 
 const Question = () => {
   return (
-    <NavLink to="/toc" className="toc">
-      {" "}
-      Should U.S. taxpayers fund expensive space telescopes like JWST while
-      there are urgent issues on Earth?
-    </NavLink>
+    <div className="question-container">
+      <NavLink to="/toc" className="question">
+        {" "}
+        Should U.S. taxpayers fund expensive space telescopes like JWST while
+        there are urgent issues on Earth?
+      </NavLink>
+    </div>
   );
 };
 
