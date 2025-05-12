@@ -46,13 +46,15 @@ const Question = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   return (
-    <div className={`question-container ${isVisible ? "visible" : ""}`}>
-      <NavLink to="/toc" className="question">
-        {" "}
-        Should U.S. taxpayers fund expensive space telescopes like JWST while
-        there are urgent issues on Earth?
-      </NavLink>
+    <div className="question-wrapper">
+      <div className={`question-container ${isVisible ? "visible" : ""}`}>
+        <NavLink to="/toc" className="question">
+          Should U.S. taxpayers fund expensive space telescopes like JWST while
+          there are urgent issues on Earth?
+        </NavLink>
+      </div>
     </div>
   );
 };
